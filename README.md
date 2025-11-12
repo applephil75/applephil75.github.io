@@ -1,6 +1,7 @@
 # Filippo Albertin
 
 * Economista aziendalista, specializzato in organizzazioni.
+* Consulente e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin)
 * Esperto in dinamiche creative, visual thinking, business aware design.
 * Musicista e compositore di estrazione conservatoriale.
 * Blogger, giornalista specializzato in argomenti economici e tecno-finanziari.
