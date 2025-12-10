@@ -3,8 +3,12 @@
 * Economista aziendalista, specializzato in organizzazioni.
 * Consulente e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin)
 * Esperto in dinamiche creative, visual thinking, business aware design.
-* Musicista e compositore di estrazione conservatoriale.
-* Blogger, giornalista specializzato in argomenti economici e tecno-finanziari.
+* Blogger e giornalista specializzato in tematiche macroeconomiche e tecnologiche
+
+#### Side project e passioni laterali
+
+* Musicista professionista e compositore di estrazione conservatoriale.
+* Organizzatore ed esperto in associazionismo culturale
 
 ## Contatti e collaborazioni
 
