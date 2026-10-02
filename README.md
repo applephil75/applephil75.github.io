@@ -14,15 +14,13 @@
 
 I miei recapiti *classici* sono legati al mio lavoro come consulente globale in operazioni con **asset digitali e decentralizzati**, quali Bitcoin, Altcoin e Stablecoin. Nello specifico collaboro con le seguenti realtà in Italia (più svariati altri soggetti in area ticinese):
 
-* [Complet Service](http://www.completservice.eu)
-* [Bitcoin Veneto Team](http://www.bitcoinvenetocenter.it)
+* [Bitcoin Veneto Team](http://www.bitcoinveneto.it)
 * [Exchange CryptoSmart](http://www.cryptosmart.it)
 
 ### Per contattarmi direttamente:
 
-* filippo@completservice.eu
-* filippo@bitcoinvenetocenter.it
-* +39 350 511 2899
+* filippo@bitcoinveneto.it
+* +39 377 124 1447
 * albertin@tuta.io (per consulenze private)
 
 ## Servizi
@@ -37,6 +35,5 @@ I miei recapiti *classici* sono legati al mio lavoro come consulente globale in 
 * Xiaomi 14C Android
 * iPhone 12 iOS 18
 * HP Chromebook
-* Compaq laptop EndeavourOS (Arch Linux)
+* Compaq laptop CatchyOS (Arch Linux)
 * MacBook Air Retina
-
