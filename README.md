@@ -2,7 +2,7 @@
 
 * Economista aziendalista, specializzato in organizzazioni.
 * Consulente e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin)
-* Esperto in dinamiche creative, visual thinking, business aware design.
+* Esperto in dinamiche creative, visual thinking, business aware design, dai primi anni Duemila.
 * Blogger e giornalista specializzato in tematiche macroeconomiche e tecnologiche
 
 #### Side project e passioni laterali
