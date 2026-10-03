@@ -8,7 +8,8 @@
 #### Side project e passioni laterali
 
 * Musicista professionista e compositore di estrazione conservatoriale.
-* Organizzatore ed esperto in associazionismo culturale
+* Organizzatore ed esperto in associazionismo culturale.
+* Blogger da quando esistono i blog.
 
 ## Contatti e collaborazioni
 
