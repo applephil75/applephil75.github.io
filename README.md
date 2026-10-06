@@ -1,5 +1,9 @@
 # Filippo Albertin
 
+Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue auree diramazioni nella grande rete.
+
+## Now
+
 * Classe 1975. Padovano di nascita. Ho vissuto per anni tra i Colli Euganei e Padova. Dal 2016 sono cittadino di Vicenza, dove sono venuto ad abitare con moglie e due gatti.
 * Economista aziendalista, specializzato in organizzazioni.
 * Consulente, formatore e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin).
