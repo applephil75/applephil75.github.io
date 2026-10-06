@@ -1,0 +1,391 @@
+/* =========================================================
+   ABOUT.MD — RETRO TERMINAL / GEEK STYLE
+   GitHub Pages + Jekyll
+   ========================================================= */
+
+:root {
+  --bg: #080b08;
+  --bg-soft: #0d120d;
+  --green: #8cff66;
+  --green-bright: #b6ff9a;
+  --green-dim: #4d8f42;
+  --link: #55e6c1;
+  --link-hover: #9affea;
+  --border: #244d27;
+  --muted: #668366;
+}
+
+/* ---------------------------------------------------------
+   PAGINA
+   --------------------------------------------------------- */
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      #101810 0%,
+      #080b08 70%
+    );
+
+  color: var(--green);
+
+  font-family:
+    "IBM Plex Mono",
+    "Fira Code",
+    "Source Code Pro",
+    "Courier New",
+    monospace;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  text-shadow:
+    0 0 2px rgba(140, 255, 102, 0.35);
+
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------------------
+   CONTENITORE PRINCIPALE
+   --------------------------------------------------------- */
+
+.wrapper,
+.container,
+.page-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 25px 80px;
+}
+
+/* ---------------------------------------------------------
+   TITOLI
+   --------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--green-bright);
+
+  font-family:
+    "IBM Plex Mono",
+    "Fira Code",
+    "Courier New",
+    monospace;
+
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  text-shadow:
+    0 0 4px rgba(140, 255, 102, 0.5);
+
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+
+  margin-top: 0;
+
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+}
+
+h1::before {
+  content: "> ";
+  color: var(--green-dim);
+}
+
+h2 {
+  font-size: 1.55rem;
+}
+
+h2::before {
+  content: "## ";
+  color: var(--green-dim);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h3::before {
+  content: "/// ";
+  color: var(--green-dim);
+}
+
+/* ---------------------------------------------------------
+   PARAGRAFI
+   --------------------------------------------------------- */
+
+p {
+  margin: 1.1em 0;
+}
+
+/* ---------------------------------------------------------
+   LINK
+   --------------------------------------------------------- */
+
+a {
+  color: var(--link);
+
+  text-decoration: none;
+
+  border-bottom: 1px dotted var(--link);
+
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+
+  background: rgba(85, 230, 193, 0.08);
+
+  border-bottom-style: solid;
+
+  text-shadow:
+    0 0 5px rgba(85, 230, 193, 0.6);
+}
+
+/* ---------------------------------------------------------
+   LISTE
+   --------------------------------------------------------- */
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+li {
+  margin: 0.35em 0;
+}
+
+li::marker {
+  color: var(--green-dim);
+}
+
+/* ---------------------------------------------------------
+   CODICE INLINE
+   --------------------------------------------------------- */
+
+code {
+  color: #d1ffbd;
+
+  background: var(--bg-soft);
+
+  border: 1px solid var(--border);
+
+  padding: 2px 6px;
+
+  font-family:
+    "IBM Plex Mono",
+    "Fira Code",
+    "Courier New",
+    monospace;
+
+  font-size: 0.9em;
+}
+
+/* ---------------------------------------------------------
+   BLOCCHI DI CODICE
+   --------------------------------------------------------- */
+
+pre {
+  background: #050705;
+
+  border: 1px solid var(--border);
+
+  border-left: 3px solid var(--green-dim);
+
+  padding: 20px;
+
+  overflow-x: auto;
+
+  box-shadow:
+    inset 0 0 20px rgba(0, 0, 0, 0.5);
+
+  margin: 2em 0;
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  color: var(--green);
+
+  font-size: 0.9rem;
+
+  text-shadow:
+    0 0 3px rgba(140, 255, 102, 0.3);
+}
+
+/* ---------------------------------------------------------
+   CITAZIONI
+   --------------------------------------------------------- */
+
+blockquote {
+  margin: 2em 0;
+
+  padding: 15px 20px;
+
+  background: rgba(20, 35, 20, 0.45);
+
+  border-left: 3px solid var(--green-dim);
+
+  color: #9bc497;
+
+  font-style: italic;
+}
+
+blockquote::before {
+  content: ">";
+  color: var(--green);
+  margin-right: 10px;
+}
+
+/* ---------------------------------------------------------
+   LINEE ORIZZONTALI
+   --------------------------------------------------------- */
+
+hr {
+  border: 0;
+
+  height: 1px;
+
+  margin: 3em 0;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--border),
+      transparent
+    );
+}
+
+/* ---------------------------------------------------------
+   IMMAGINI
+   --------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  border: 1px solid var(--border);
+
+  filter:
+    saturate(0.85)
+    contrast(1.05);
+
+  box-shadow:
+    0 0 15px rgba(50, 120, 50, 0.12);
+}
+
+/* ---------------------------------------------------------
+   TABELLE
+   --------------------------------------------------------- */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin: 2em 0;
+
+  background: rgba(8, 14, 8, 0.7);
+}
+
+th,
+td {
+  padding: 10px 12px;
+
+  border: 1px solid var(--border);
+
+  text-align: left;
+}
+
+th {
+  color: var(--green-bright);
+
+  background: rgba(40, 80, 40, 0.2);
+}
+
+/* ---------------------------------------------------------
+   SELEZIONE DEL TESTO
+   --------------------------------------------------------- */
+
+::selection {
+  background: var(--green);
+  color: #050805;
+
+  text-shadow: none;
+}
+
+/* ---------------------------------------------------------
+   CURSORE "TERMINALE"
+   --------------------------------------------------------- */
+
+h1::after {
+  content: "█";
+
+  margin-left: 8px;
+
+  color: var(--green);
+
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .wrapper,
+  .container,
+  .page-content {
+    padding: 25px 18px 60px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  pre {
+    padding: 14px;
+  }
+}
