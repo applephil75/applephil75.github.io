@@ -1,12 +1,10 @@
 # Filippo Albertin
 
-<<<<<<< HEAD
+![](https://64.media.tumblr.com/01b151ed509d6100adae2e0f7c3173ba/42105eef0dcbee45-c1/s1280x1920/d96dcf4b3e80699a89002ee003294def4bf632da.png)
+
 Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue auree diramazioni nella grande rete.
 
 ## Now
-=======
-![](https://64.media.tumblr.com/01b151ed509d6100adae2e0f7c3173ba/42105eef0dcbee45-c1/s1280x1920/d96dcf4b3e80699a89002ee003294def4bf632da.png)
->>>>>>> refs/remotes/origin/main
 
 * Classe 1975. Padovano di nascita. Ho vissuto per anni tra i Colli Euganei e Padova. Dal 2016 sono cittadino di Vicenza, dove sono venuto ad abitare con moglie e due gatti.
 * Economista aziendalista, specializzato in organizzazioni.
