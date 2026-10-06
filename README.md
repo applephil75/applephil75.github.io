@@ -2,15 +2,15 @@
 
 * Classe 1975. Padovano di nascita. Ho vissuto per anni tra i Colli Euganei e Padova. Dal 2016 sono cittadino di Vicenza, dove sono venuto ad abitare con moglie e due gatti.
 * Economista aziendalista, specializzato in organizzazioni.
-* Consulente e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin)
-* Esperto in dinamiche creative, visual thinking, business aware design, con numerose esperienza fin dai primi anni Duemila.
-* Blogger e giornalista specializzato in tematiche macroeconomiche e tecnologiche.
+* Consulente, formatore e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin).
+* Esperto in dinamiche creative, visual thinking, business aware design, con numerose esperienze fin dai primi anni Duemila.
+* Blogger e giornalista specializzato in tematiche macroeconomiche e tecnologiche, con specifico riferimento alla finanza digitale e decentralizzata.
 
 #### Side project e passioni laterali
 
 * Musicista professionista, pianista e compositore di estrazione conservatoriale.
-* Organizzatore ed esperto di associazionismo culturale (sono stato presidente, vicepresidente, tesoriere e co-fondatore all'interno di numerosi progetti).
-* Blogger da quando esistono i blog.
+* Organizzatore ed esperto di associazionismo culturale e istituzioni. Sono stato presidente, vicepresidente, tesoriere e co-fondatore all'interno di numerosi progetti, nonché membro di consiglio all'interno dell'area cooperazione internazionale, in stretta collaborazione col Comune di Padova.
+* Appasionato di scrittura per il Web, mi definisco *blogger da quando esistono i blog*.
 
 ## Contatti e collaborazioni
 
