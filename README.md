@@ -10,7 +10,7 @@
 
 * Musicista professionista, pianista e compositore di estrazione conservatoriale.
 * Organizzatore ed esperto di associazionismo culturale e istituzioni. Sono stato presidente, vicepresidente, tesoriere e co-fondatore all'interno di numerosi progetti, nonché membro di consiglio all'interno dell'area cooperazione internazionale, in stretta collaborazione col Comune di Padova.
-* Appasionato di scrittura per il Web, mi definisco *blogger da quando esistono i blog*.
+* Appassionato di scrittura per il Web, mi definisco *blogger da quando esistono i blog*.
 
 ## Collegamenti e collaborazioni
 
