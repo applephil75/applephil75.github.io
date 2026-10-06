@@ -28,9 +28,9 @@ I miei recapiti *classici* sono legati al mio lavoro come consulente globale in 
 ## Servizi
 
 * Operazioni e investimenti in e con asset digitali (Bitcoin in primis) tra Italia e Svizzera Italiana.
-* Formazione e training in fin-tech e blockchain applicata
+* Formazione e training in fin-tech e blockchain applicata.
 * Consulenza e mediazione per relocation aziendale o personale in Ticino, o matching per relocation estere.
-* Investimenti in mining Bitcoin certificati
+* Investimenti in mining Bitcoin certificati (no cloud).
 
 ## Hardware e software
 
