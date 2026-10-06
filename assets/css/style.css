@@ -1,11 +1,27 @@
----
----
+/* --------------------------------------------------
+   FILIPPO ALBERTIN
+   Personal Jekyll theme
+   -------------------------------------------------- */
 
-@import "{{ site.theme }}";
+:root {
+  --background: #f7f7f4;
+  --text: #171717;
+  --muted: #777;
+  --line: #d8d8d2;
+  --link: #111;
+  --accent: #e84b27;
 
-/* =========================================================
-   BASE
-   ========================================================= */
+  --width: 760px;
+}
+
+
+/* --------------------------------------------------
+   RESET
+   -------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -13,343 +29,498 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
-  color: #202020;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 1.75;
-}
+  padding: 0;
 
-/* Contenitore principale */
-
-.wrapper {
-  max-width: 860px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-.site-header {
-  border-top: 0;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: auto;
-}
-
-/*
-   Il titolo del blog è volutamente molto grande.
-   Lo spazio inferiore crea una separazione netta
-   dalla navigazione.
-*/
-
-.site-title {
-  display: block;
-  float: none;
-
-  margin-top: 42px;
-  margin-bottom: 32px;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 1;
-  letter-spacing: -2px;
-
-  color: #111111;
-}
-
-
-/* =========================================================
-   NAVIGAZIONE
-   ========================================================= */
-
-.site-nav {
-  float: none;
-  position: static;
-
-  margin-bottom: 30px;
+  background: var(--background);
+  color: var(--text);
 
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    "Segoe UI",
+    "Helvetica Neue",
     Helvetica,
     Arial,
     sans-serif;
 
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+  font-size: 17px;
+  line-height: 1.65;
 
-.site-nav a {
-  margin-right: 25px;
-
-  color: #555555;
-  text-decoration: none;
-}
-
-.site-nav a:hover {
-  color: #000000;
+  -webkit-font-smoothing: antialiased;
 }
 
 
-/* =========================================================
-   CONTENUTO
-   ========================================================= */
-
-.page-content {
-  padding: 75px 0 90px;
-}
-
-
-/* =========================================================
-   TITOLI
-   ========================================================= */
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #151515;
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 42px;
-  line-height: 1.15;
-  letter-spacing: -1.2px;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 1.25;
-  margin-top: 55px;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 1.3;
-  margin-top: 45px;
-}
-
-
-/* =========================================================
-   HOME / LISTA ARTICOLI
-   ========================================================= */
-
-.post-list {
-  margin-top: 0;
-}
-
-.post-list > li {
-  margin-bottom: 65px;
-}
-
-.post-list h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.post-list h3 a {
-  color: #151515;
-  text-decoration: none;
-}
-
-.post-list h3 a:hover {
-  color: #666666;
-}
-
-
-/* =========================================================
-   DATE
-   ========================================================= */
-
-.post-meta {
-  margin-bottom: 18px;
-
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif;
-
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-  color: #999999;
-}
-
-
-/* =========================================================
-   ARTICOLO
-   ========================================================= */
-
-.post-header {
-  margin-bottom: 55px;
-}
-
-.post-title {
-  margin-bottom: 15px;
-
-  font-size: 52px;
-  line-height: 1.08;
-  letter-spacing: -2px;
-}
-
-.post-content {
-  max-width: 720px;
-  font-size: 19px;
-}
-
-
-/* =========================================================
-   PARAGRAFI
-   ========================================================= */
-
-.post-content p {
-  margin-bottom: 1.5em;
-}
-
-
-/* =========================================================
-   LINK
-   ========================================================= */
+/* --------------------------------------------------
+   GENERAL
+   -------------------------------------------------- */
 
 a {
-  color: #111111;
+  color: var(--link);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: #666666;
+  color: var(--accent);
+}
+
+.site {
+  max-width: var(--width);
+
+  margin: 0 auto;
+
+  padding:
+    70px 30px
+    60px 30px;
 }
 
 
-/* =========================================================
-   CITAZIONI
-   ========================================================= */
+/* --------------------------------------------------
+   HEADER
+   -------------------------------------------------- */
 
-blockquote {
-  margin: 40px 0;
-  padding: 5px 25px;
+.site-header {
+  border-bottom: 1px solid var(--line);
 
-  border-left: 2px solid #222222;
+  padding-bottom: 28px;
 
-  font-size: 21px;
-  font-style: italic;
-  color: #555555;
+  margin-bottom: 75px;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: 700;
+
+  letter-spacing: -0.04em;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-description {
+  margin: 5px 0 24px;
+
+  color: var(--muted);
+
+  font-size: 14px;
 }
 
 
-/* =========================================================
-   IMMAGINI
-   ========================================================= */
+/* --------------------------------------------------
+   NAVIGATION
+   -------------------------------------------------- */
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 40px auto;
+.navigation {
+  display: flex;
+  gap: 22px;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 13px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
 }
 
 
-/* =========================================================
-   CODICE
-   ========================================================= */
+/* --------------------------------------------------
+   INTRO
+   -------------------------------------------------- */
 
-code {
-  padding: 2px 5px;
-
-  background: #f3f3f3;
-
-  font-size: 0.85em;
+.intro {
+  margin-bottom: 90px;
 }
 
-pre {
-  padding: 20px;
-  overflow-x: auto;
+.intro-label {
+  margin: 0 0 18px;
 
-  background: #f5f5f5;
+  color: var(--accent);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.intro h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 8vw, 72px);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 700;
+}
+
+.intro-text {
+  max-width: 520px;
+
+  margin-top: 30px;
+
+  color: #555;
+
+  font-size: 19px;
+
+  line-height: 1.55;
 }
 
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* --------------------------------------------------
+   POST LIST
+   -------------------------------------------------- */
 
-.site-footer {
-  padding: 35px 0 45px;
+.post-list {
+  border-top: 1px solid var(--line);
+}
 
-  border-top: 1px solid #e5e5e5;
+.post-preview {
+  padding: 34px 0 40px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.post-meta {
+  color: var(--muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+}
+
+.post-preview h2 {
+  margin: 8px 0 10px;
+
+  font-size: 30px;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+.post-preview h2 a {
+  text-decoration: none;
+}
+
+.post-excerpt {
+  max-width: 620px;
+
+  color: #555;
+
+  font-size: 16px;
+}
+
+.read-more {
+  display: inline-block;
+
+  margin-top: 14px;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 12px;
+
+  text-decoration: none;
+}
+
+
+/* --------------------------------------------------
+   POST
+   -------------------------------------------------- */
+
+.post {
+  margin-bottom: 80px;
+}
+
+.post-header {
+  margin-bottom: 60px;
+}
+
+.post-header h1 {
+  margin: 12px 0 0;
+
+  font-size: clamp(42px, 7vw, 64px);
+
+  line-height: 1.02;
+
+  letter-spacing: -0.055em;
+}
+
+.post-description {
+  max-width: 620px;
+
+  margin-top: 25px;
+
+  color: #666;
+
+  font-size: 19px;
+}
+
+
+/* --------------------------------------------------
+   ARTICLE CONTENT
+   -------------------------------------------------- */
+
+.post-content {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 19px;
+
+  line-height: 1.72;
+}
+
+.post-content p {
+  margin: 0 0 1.5em;
+}
+
+.post-content h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.7em;
 
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
+    "Helvetica Neue",
     Arial,
     sans-serif;
 
-  font-size: 12px;
-  color: #888888;
+  font-size: 30px;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+.post-content h3 {
+  margin-top: 2em;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 22px;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5em;
+
+  padding-left: 1.4em;
+}
+
+.post-content blockquote {
+  margin: 2em 0;
+
+  padding-left: 25px;
+
+  border-left: 3px solid var(--accent);
+
+  color: #555;
+
+  font-style: italic;
+}
+
+.post-content img {
+  display: block;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 40px 0;
+}
+
+.post-content code {
+  padding: 2px 5px;
+
+  background: #e9e9e4;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 0.85em;
+}
+
+.post-content pre {
+  overflow-x: auto;
+
+  padding: 20px;
+
+  background: #1c1c1c;
+
+  color: #eee;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.post-content pre code {
+  padding: 0;
+
+  background: transparent;
+
+  color: inherit;
 }
 
 
-/* =========================================================
+/* --------------------------------------------------
+   POST FOOTER
+   -------------------------------------------------- */
+
+.post-footer {
+  margin-top: 70px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid var(--line);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 12px;
+}
+
+
+/* --------------------------------------------------
+   PAGES
+   -------------------------------------------------- */
+
+.page-header {
+  margin-bottom: 55px;
+}
+
+.page-header h1 {
+  margin: 0;
+
+  font-size: clamp(42px, 7vw, 64px);
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+}
+
+.page-content {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 19px;
+
+  line-height: 1.72;
+}
+
+
+/* --------------------------------------------------
+   FOOTER
+   -------------------------------------------------- */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-top: 100px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  font-size: 11px;
+}
+
+
+/* --------------------------------------------------
    MOBILE
-   ========================================================= */
+   -------------------------------------------------- */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
-  body {
-    font-size: 17px;
+  .site {
+    padding:
+      40px 20px
+      40px 20px;
   }
 
-  .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+  .site-header {
+    margin-bottom: 55px;
   }
 
-  .site-title {
-    margin-top: 30px;
-    margin-bottom: 25px;
+  .navigation {
+    gap: 16px;
 
-    font-size: 38px;
-    letter-spacing: -1.5px;
+    flex-wrap: wrap;
   }
 
-  .site-nav {
-    margin-bottom: 22px;
+  .intro {
+    margin-bottom: 65px;
   }
 
-  .page-content {
-    padding-top: 50px;
+  .intro h1 {
+    font-size: 48px;
   }
 
-  .post-title {
-    font-size: 38px;
-    letter-spacing: -1px;
+  .post-preview h2 {
+    font-size: 26px;
   }
 
   .post-content {
     font-size: 18px;
   }
 
-  h2 {
-    font-size: 27px;
+  .site-footer {
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: 70px;
   }
 
 }

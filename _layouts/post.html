@@ -4,12 +4,34 @@ layout: default
 
 <article class="post">
 
-  <h1>{{ page.title }}</h1>
+  <header class="post-header">
 
-  <p class="post-date">
-    {{ page.date | date: "%d/%m/%Y" }}
-  </p>
+    <div class="post-meta">
+      {{ page.date | date: "%d.%m.%Y" }}
+    </div>
 
-  {{ content }}
+    <h1>
+      {{ page.title }}
+    </h1>
+
+    {% if page.description %}
+      <p class="post-description">
+        {{ page.description }}
+      </p>
+    {% endif %}
+
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+
+    <a href="{{ '/' | relative_url }}">
+      ← back to home
+    </a>
+
+  </footer>
 
 </article>

@@ -2,7 +2,9 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 
   <title>
     {% if page.title %}
@@ -12,35 +14,28 @@
     {% endif %}
   </title>
 
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description"
+        content="{{ page.description | default: site.description }}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% feed_meta %}
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      {{ site.title }}
-    </a>
+  <div class="site">
 
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-    </nav>
+    {% include header.html %}
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
   </div>
-</header>
-
-<main class="container">
-  {{ content }}
-</main>
-
-<footer>
-  <div class="container">
-    <p>© {{ site.time | date: "%Y" }} {{ site.author }}</p>
-  </div>
-</footer>
 
 </body>
 </html>

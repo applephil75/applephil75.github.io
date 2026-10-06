@@ -1,11 +1,21 @@
-title: "Phil Git Blog"
-description: "Un blog personale di Filippo Albertin"
-author: "phil"
-url: "https://applephil75.github.io"
+title: "Filippo Albertin"
+description: "Notes, essays, Bitcoin, culture and the Web."
+url: "https://nomeutente.github.io"
 baseurl: ""
+
+author:
+  name: "Filippo Albertin"
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+theme: null
+
 plugins:
   - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
