@@ -1,0 +1,11 @@
+title: "Il mio blog"
+description: "Un blog personale"
+author: "Il mio nome"
+url: "https://nomeutente.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
