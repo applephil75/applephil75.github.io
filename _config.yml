@@ -1,21 +1,36 @@
-title: "Filippo Albertin"
-description: "Notes, essays, culture and the Web."
-url: "https://applephil75.github.io"
-baseurl: ""
+title: My blog
+description: My very nice blog
+author: "Jorge Sanz"
 
-author:
-  name: "Filippo Albertin"
+theme: minima
 
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
+base_url: /gh-pages-minima-starter
+repository: jsanz/gh-pages-minima-starter
 
-theme: null
+# Minima social links
+github_username: jsanz
+linkedin_username: jsanz
+rss: rss
 
-plugins:
-  - jekyll-feed
+# Minima: show excerpts in the frontpage
+show_excerpts: true
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
+minima:
+  date_format: "%Y-%m-%d"
+
+# Minima: custom header links
+header_pages:
+  - _pages/frontpage.md
+  - _pages/about.md
+  - _pages/archive.md
+
+include:
+    - _pages
+
+exclude: 
+    - .gitignore
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
