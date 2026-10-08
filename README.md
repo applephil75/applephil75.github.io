@@ -1,5 +1,7 @@
 # Filippo Albertin
 
+![](https://64.media.tumblr.com/4964df7e49919c8940363e70d42929f1/91d05379760fbecc-5a/s1280x1920/6d8ee5407a4b31b831c14b6e3c144bb6975ea87a.png)
+
 Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue auree diramazioni nella grande rete.
 
 ## Now
