@@ -1,0 +1,595 @@
+```css
+/*
+   CORAL PHOSPHOR CRT
+   Retro terminal / dark editorial theme
+   GitHub Pages + Jekyll
+*/
+
+/* =========================================
+   01. PALETTE E IMPOSTAZIONI
+   ========================================= */
+
+:root {
+  color-scheme: dark;
+
+  --black: #000000;
+  --screen: #050302;
+  --panel: #0B0706;
+
+  --cream: #FFF6E9;
+  --cream-soft: #F5EBDD;
+  --muted: #BDB0A4;
+
+  --coral: #FF704D;
+  --coral-bright: #FF8A6B;
+  --coral-soft: #FFB39D;
+  --coral-dark: #A83C29;
+  --coral-dim: #57271F;
+
+  --serif: "Times New Roman", Times, serif;
+  --mono: "Courier New", Courier, monospace;
+
+  --content-width: 850px;
+}
+
+/* =========================================
+   02. SCHERMO
+   ========================================= */
+
+html {
+  min-height: 100%;
+  background: var(--black);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--black) !important;
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Velo CRT: righe di scansione molto leggere */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(255, 112, 77, 0.025) 4px
+  );
+}
+
+/* Alone luminoso ai bordi del testo */
+
+::selection {
+  background: var(--coral);
+  color: var(--black);
+}
+
+/* =========================================
+   03. IMPAGINAZIONE
+   ========================================= */
+
+.wrapper,
+.container,
+.page-content {
+  width: auto;
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-content {
+  padding-top: 42px;
+  padding-bottom: 90px;
+}
+
+main {
+  background: transparent !important;
+}
+
+/* =========================================
+   04. TESTATA
+   ========================================= */
+
+.site-header {
+  min-height: auto;
+  border-top: 3px solid var(--coral) !important;
+  border-bottom: 1px solid var(--coral-dim) !important;
+  background: var(--black) !important;
+  box-shadow: 0 3px 18px rgba(255, 112, 77, 0.06);
+}
+
+.site-header .wrapper {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+  text-decoration: none !important;
+  text-shadow: 0 0 12px rgba(255, 246, 233, 0.12);
+}
+
+.site-title:hover {
+  color: var(--coral-bright) !important;
+  text-shadow: 0 0 12px rgba(255, 112, 77, 0.45);
+}
+
+.site-description {
+  margin-top: 12px;
+  color: var(--muted) !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   05. NAVIGAZIONE
+   ========================================= */
+
+.site-nav {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+}
+
+.site-nav .page-link {
+  color: var(--coral) !important;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.site-nav .page-link:hover {
+  color: var(--coral-soft) !important;
+  text-shadow: 0 0 8px rgba(255, 112, 77, 0.55);
+}
+
+/* =========================================
+   06. TITOLI
+   ========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.page-heading {
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+h1,
+.page-heading {
+  font-size: 2.45rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2em;
+  margin-bottom: 0.65em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.7em;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h2::before {
+  content: "## ";
+  color: var(--coral);
+  font-family: var(--mono);
+  font-size: 0.72em;
+  text-shadow: 0 0 8px rgba(255, 112, 77, 0.4);
+}
+
+h3::before {
+  content: "> ";
+  color: var(--coral);
+  font-family: var(--mono);
+}
+
+/* =========================================
+   07. TESTO
+   ========================================= */
+
+p,
+li,
+dd,
+dt,
+td,
+th,
+.post-content,
+.page-content {
+  color: var(--cream) !important;
+}
+
+p {
+  margin-bottom: 1.35em;
+}
+
+strong,
+b {
+  color: #FFFFFF !important;
+  font-weight: bold;
+}
+
+em,
+i {
+  color: var(--cream-soft);
+}
+
+small {
+  color: var(--muted) !important;
+}
+
+/* =========================================
+   08. LINK LUMINOSI
+   ========================================= */
+
+a,
+a:visited {
+  color: var(--coral) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--coral-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.15s ease,
+              text-shadow 0.15s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--coral-soft) !important;
+  text-decoration-color: var(--coral-bright);
+  text-shadow: 0 0 8px rgba(255, 112, 77, 0.4);
+}
+
+/* Il titolo del sito resta senza sottolineatura */
+
+.site-title,
+.site-title:visited,
+.site-title:hover {
+  text-decoration: none !important;
+}
+
+/* =========================================
+   09. ARCHIVIO E ARTICOLI
+   ========================================= */
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-list > li {
+  margin-bottom: 32px;
+  padding: 0 0 24px;
+  border-bottom: 1px solid rgba(255, 112, 77, 0.13);
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+}
+
+.post-list .post-link {
+  color: var(--coral) !important;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.post-list .post-link:hover {
+  color: var(--coral-soft) !important;
+  text-shadow: 0 0 10px rgba(255, 112, 77, 0.35);
+}
+
+.post-meta,
+.post-date,
+time,
+dt {
+  color: var(--muted) !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.3px;
+}
+
+.post-meta::before {
+  content: "[ ";
+  color: var(--coral-dark);
+}
+
+.post-meta::after {
+  content: " ]";
+  color: var(--coral-dark);
+}
+
+.post-title {
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   10. CITAZIONI
+   ========================================= */
+
+blockquote {
+  margin: 2em 0;
+  padding: 18px 25px;
+  border-left: 2px solid var(--coral) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 112, 77, 0.075),
+    transparent 85%
+  );
+  color: var(--cream-soft) !important;
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-style: italic;
+  box-shadow: -5px 0 16px rgba(255, 112, 77, 0.04);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   11. LISTE
+   ========================================= */
+
+ul,
+ol {
+  padding-left: 1.6em;
+}
+
+li {
+  margin-bottom: 0.35em;
+}
+
+li::marker {
+  color: var(--coral);
+}
+
+/* =========================================
+   12. CODICE E TERMINALE
+   ========================================= */
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--mono) !important;
+  font-size: 0.82em;
+}
+
+code {
+  padding: 3px 6px;
+  background: var(--panel) !important;
+  color: var(--coral-bright) !important;
+  border: 1px solid rgba(255, 112, 77, 0.12);
+}
+
+pre {
+  margin: 2em 0;
+  padding: 22px;
+  overflow-x: auto;
+  background: #080403 !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--coral-dim) !important;
+  border-radius: 2px;
+  box-shadow: inset 0 0 25px rgba(255, 112, 77, 0.035);
+  line-height: 1.65;
+}
+
+pre code {
+  padding: 0;
+  border: none;
+  background: transparent !important;
+  color: var(--cream) !important;
+}
+
+/* =========================================
+   13. IMMAGINI
+   ========================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 2.5em 0;
+}
+
+figcaption {
+  margin-top: 12px;
+  color: var(--muted) !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+/* =========================================
+   14. TABELLE
+   ========================================= */
+
+table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+thead {
+  border-bottom: 1px solid var(--coral);
+}
+
+th {
+  color: var(--coral-bright) !important;
+  font-family: var(--mono);
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(255, 112, 77, 0.12);
+  text-align: left;
+}
+
+/* =========================================
+   15. DETTAGLI GRAFICI
+   ========================================= */
+
+hr {
+  height: 1px;
+  margin: 3em 0;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--coral-dark),
+    rgba(255, 112, 77, 0.15),
+    transparent
+  );
+}
+
+abbr {
+  text-decoration: underline dotted var(--coral-dark);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 1px solid var(--coral);
+  outline-offset: 4px;
+}
+
+/* =========================================
+   16. PIEDE PAGINA
+   ========================================= */
+
+.site-footer {
+  background: var(--black) !important;
+  border-top: 1px solid var(--coral-dim) !important;
+  box-shadow: 0 -5px 20px rgba(255, 112, 77, 0.025);
+}
+
+.site-footer .wrapper {
+  padding-top: 28px;
+  padding-bottom: 32px;
+}
+
+.footer-col,
+.footer-col p,
+.contact-list,
+.social-media-list {
+  color: var(--muted) !important;
+}
+
+.site-footer a {
+  color: var(--coral) !important;
+}
+
+/* =========================================
+   17. RESPONSIVE
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .wrapper,
+  .container,
+  .page-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-content {
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+
+  .site-header .wrapper {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  h1,
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.55rem;
+  }
+
+  .post-list .post-link {
+    font-size: 1.2rem;
+  }
+
+  .site-nav .page-link {
+    margin-left: 10px;
+  }
+
+  pre {
+    padding: 14px;
+  }
+}
+
+/* =========================================
+   18. ACCESSIBILITÀ
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  a {
+    transition: none;
+  }
+}
+```
