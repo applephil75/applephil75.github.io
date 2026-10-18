@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title and page.title != "Home" %}
+      {{ page.title }} — {{ site.title }}
+    {% else %}
+      {{ site.title }} — Personal Web
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="theme-color" content="#090807">
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="screen">
+
+    <header class="site-header">
+      <div class="system-line">
+        <span class="status-light"></span>
+        <span>PERSONAL WEB / EST. 2026</span>
+        <span class="system-version">SYSTEM 01.0</span>
+      </div>
+
+      <a class="site-name" href="{{ '/' | relative_url }}">
+        applephil75<span class="cursor">_</span>
+      </a>
+
+      <p class="site-tagline">
+        Notes from the edge of the digital world.
+      </p>
+
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="{{ '/' | relative_url }}">[ HOME ]</a>
+        <a href="{{ '/#about' | relative_url }}">[ ABOUT ]</a>
+        <a href="{{ '/#interests' | relative_url }}">[ INTERESTS ]</a>
+        <a href="{{ '/#links' | relative_url }}">[ LINKS ]</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-rule"></div>
+
+      <p class="footer-status">
+        <span class="status-light"></span>
+        ALL SYSTEMS NOMINAL
+      </p>
+
+      <p>
+        Independent by design. Published with GitHub Pages.
+      </p>
+
+      <p class="copyright">
+        © 2026 applephil75 · MADE OF HTML, CSS & CURIOSITY
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
