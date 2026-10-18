@@ -1,0 +1,389 @@
+
+/* ==========================================================
+   APPLEPHIL75 — CORAL PHOSPHOR
+   Personal web / CRT terminal / editorial dark mode
+   ========================================================== */
+
+:root {
+  color-scheme: dark;
+
+  --background: #090807;
+  --surface: #100d0b;
+  --surface-hover: #19110e;
+
+  --coral: #ff704f;
+  --coral-bright: #ff8969;
+  --coral-dim: #b84c37;
+  --coral-glow: rgba(255, 112, 79, 0.13);
+
+  --text: #f3e8d9;
+  --muted: #a69a8d;
+  --border: #493027;
+  --border-bright: #8c4935;
+
+  --serif: "Times New Roman", Times, serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono",
+          "Courier New", monospace;
+
+  --page-width: 820px;
+  --reading-width: 680px;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+}
+
+/* Screen and subtle CRT atmosphere */
+
+.screen {
+  position: relative;
+  width: min(var(--page-width), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 36px 0 24px;
+}
+
+.screen::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.13;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgba(255, 180, 140, 0.045) 4px
+  );
+}
+
+/* Header */
+
+.site-header {
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--border);
+}
+
+.system-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 14px;
+  color: var(--coral);
+  border-bottom: 1px solid var(--border);
+  font: 11px/1.5 var(--mono);
+  letter-spacing: 0.09em;
+}
+
+.status-light {
+  display: inline-block;
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+  box-shadow: 0 0 7px var(--coral);
+}
+
+.system-version {
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.site-name {
+  display: inline-block;
+  margin-top: 32px;
+  color: var(--text);
+  font: bold clamp(36px, 7vw, 62px)/1.05 var(--mono);
+  letter-spacing: -0.09em;
+  text-decoration: none;
+  text-shadow: 0 0 22px var(--coral-glow);
+}
+
+.cursor {
+  color: var(--coral);
+}
+
+.site-tagline {
+  margin: 13px 0 24px;
+  color: var(--muted);
+  font: italic 20px/1.5 var(--serif);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border);
+  font: 12px/1.8 var(--mono);
+}
+
+/* Links */
+
+a {
+  color: var(--coral-bright);
+  text-decoration-color: var(--coral-dim);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 140ms ease;
+}
+
+a:hover {
+  color: #ffd0bb;
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--coral-bright);
+  outline-offset: 5px;
+}
+
+.site-nav a {
+  color: var(--coral);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #ffd0bb;
+  text-shadow: 0 0 12px var(--coral-glow);
+}
+
+/* Main content */
+
+#main-content {
+  max-width: var(--reading-width);
+  padding: 28px 0 12px;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 17px;
+  color: var(--coral);
+  font: 12px/1.6 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  font-family: var(--serif);
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(32px, 5vw, 44px);
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 29px;
+}
+
+h3 {
+  margin: 26px 0 10px;
+  font-size: 22px;
+}
+
+p {
+  margin: 0 0 19px;
+}
+
+strong {
+  color: #fff3e6;
+}
+
+em {
+  color: #f0c3ad;
+}
+
+section {
+  margin: 0 0 42px;
+  scroll-margin-top: 24px;
+}
+
+section + section {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* Editorial callout */
+
+.intro-panel {
+  margin: 26px 0 36px;
+  padding: 22px 24px;
+  background: var(--surface);
+  border-left: 2px solid var(--coral);
+  box-shadow: inset 0 0 28px rgba(255, 112, 79, 0.025);
+}
+
+.intro-panel p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 25px 0;
+  padding: 4px 0 4px 22px;
+  color: var(--muted);
+  border-left: 1px solid var(--border-bright);
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Link lists */
+
+.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-list li {
+  display: flex;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.link-list li::before {
+  content: ">";
+  flex: 0 0 auto;
+  color: var(--coral);
+  font-family: var(--mono);
+}
+
+.link-list a {
+  font-weight: bold;
+}
+
+.link-note {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Small terminal-style metadata */
+
+.meta {
+  color: var(--muted);
+  font: 12px/1.8 var(--mono);
+}
+
+.inline-accent {
+  color: var(--coral);
+  font-family: var(--mono);
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 28px;
+  padding-top: 22px;
+  color: var(--muted);
+  font: 12px/1.9 var(--mono);
+}
+
+.footer-rule {
+  height: 1px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    var(--coral-dim),
+    var(--border),
+    transparent
+  );
+}
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--coral);
+}
+
+.copyright {
+  margin-top: 18px;
+  color: #75685e;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .screen {
+    width: calc(100% - 32px);
+    padding-top: 18px;
+  }
+
+  .site-name {
+    margin-top: 27px;
+    letter-spacing: -0.08em;
+  }
+
+  .site-tagline {
+    font-size: 18px;
+  }
+
+  .site-nav {
+    gap: 10px 16px;
+  }
+
+  .intro-panel {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  a {
+    transition: none;
+  }
+}
