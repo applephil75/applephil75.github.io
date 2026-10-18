@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/css/style.css">
+
 # Filippo Albertin
 
 Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue auree diramazioni nella grande rete.
