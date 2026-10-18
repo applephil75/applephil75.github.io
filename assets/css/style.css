@@ -1,34 +1,176 @@
 ```css
-/* BLACK & CORAL — GitHub Pages */
+/*
+   CORAL PHOSPHOR CRT
+   Retro terminal / dark editorial theme
+   GitHub Pages + Jekyll
+*/
 
-/* Base */
-html,
+/* =========================================
+   01. PALETTE E IMPOSTAZIONI
+   ========================================= */
+
+:root {
+  color-scheme: dark;
+
+  --black: #000000;
+  --screen: #050302;
+  --panel: #0B0706;
+
+  --cream: #FFF6E9;
+  --cream-soft: #F5EBDD;
+  --muted: #BDB0A4;
+
+  --coral: #FF704D;
+  --coral-bright: #FF8A6B;
+  --coral-soft: #FFB39D;
+  --coral-dark: #A83C29;
+  --coral-dim: #57271F;
+
+  --serif: "Times New Roman", Times, serif;
+  --mono: "Courier New", Courier, monospace;
+
+  --content-width: 850px;
+}
+
+/* =========================================
+   02. SCHERMO
+   ========================================= */
+
+html {
+  min-height: 100%;
+  background: var(--black);
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #000000 !important;
-  color: #F5F0E6 !important;
-  font-family: "Times New Roman", Times, serif !important;
-  font-size: 18px;
-  line-height: 1.7;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--black) !important;
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
+  font-size: 19px;
+  line-height: 1.75;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Larghezza e centratura */
-.wrapper {
-  max-width: 680px;
-  margin: 0 auto;
+/* Velo CRT: righe di scansione molto leggere */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(255, 112, 77, 0.025) 4px
+  );
 }
 
-/* Titolo del sito */
+/* Alone luminoso ai bordi del testo */
+
+::selection {
+  background: var(--coral);
+  color: var(--black);
+}
+
+/* =========================================
+   03. IMPAGINAZIONE
+   ========================================= */
+
+.wrapper,
+.container,
+.page-content {
+  width: auto;
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-content {
+  padding-top: 42px;
+  padding-bottom: 90px;
+}
+
+main {
+  background: transparent !important;
+}
+
+/* =========================================
+   04. TESTATA
+   ========================================= */
+
+.site-header {
+  min-height: auto;
+  border-top: 3px solid var(--coral) !important;
+  border-bottom: 1px solid var(--coral-dim) !important;
+  background: var(--black) !important;
+  box-shadow: 0 3px 18px rgba(255, 112, 77, 0.06);
+}
+
+.site-header .wrapper {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
 .site-title,
 .site-title:visited {
-  color: #F5F0E6 !important;
-  font-family: "Times New Roman", Times, serif !important;
-  font-size: 42px;
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
+  font-size: 2.6rem;
+  line-height: 1.15;
   font-weight: normal;
-  letter-spacing: -1px;
-  text-decoration: none;
+  letter-spacing: -1.5px;
+  text-decoration: none !important;
+  text-shadow: 0 0 12px rgba(255, 246, 233, 0.12);
 }
 
-/* Titoli */
+.site-title:hover {
+  color: var(--coral-bright) !important;
+  text-shadow: 0 0 12px rgba(255, 112, 77, 0.45);
+}
+
+.site-description {
+  margin-top: 12px;
+  color: var(--muted) !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   05. NAVIGAZIONE
+   ========================================= */
+
+.site-nav {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+}
+
+.site-nav .page-link {
+  color: var(--coral) !important;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.site-nav .page-link:hover {
+  color: var(--coral-soft) !important;
+  text-shadow: 0 0 8px rgba(255, 112, 77, 0.55);
+}
+
+/* =========================================
+   06. TITOLI
+   ========================================= */
+
 h1,
 h2,
 h3,
@@ -37,93 +179,81 @@ h5,
 h6,
 .post-title,
 .page-heading {
-  color: #F5F0E6 !important;
-  font-family: "Times New Roman", Times, serif !important;
+  color: var(--cream) !important;
+  font-family: var(--serif) !important;
   font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
 }
 
-/* Testo */
+h1,
+.page-heading {
+  font-size: 2.45rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2em;
+  margin-bottom: 0.65em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.7em;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h2::before {
+  content: "## ";
+  color: var(--coral);
+  font-family: var(--mono);
+  font-size: 0.72em;
+  text-shadow: 0 0 8px rgba(255, 112, 77, 0.4);
+}
+
+h3::before {
+  content: "> ";
+  color: var(--coral);
+  font-family: var(--mono);
+}
+
+/* =========================================
+   07. TESTO
+   ========================================= */
+
 p,
 li,
-blockquote,
+dd,
+dt,
+td,
+th,
 .post-content,
 .page-content {
-  color: #F5F0E6 !important;
+  color: var(--cream) !important;
 }
 
-/* Link corallo */
-a,
-a:visited {
-  color: #FF704D !important;
-  text-decoration: underline;
-  text-decoration-color: #FF704D;
-  text-underline-offset: 3px;
+p {
+  margin-bottom: 1.35em;
 }
 
-/* Link al passaggio del mouse */
-a:hover,
-a:focus {
-  color: #FFAA91 !important;
-  text-decoration-color: #FFAA91;
+strong,
+b {
+  color: #FFFFFF !important;
+  font-weight: bold;
 }
 
-/* Metadati */
-.post-meta,
-.post-date,
-.site-description,
-footer {
-  color: #BDB7AC !important;
+em,
+i {
+  color: var(--cream-soft);
 }
 
-/* Codice */
-code,
-pre {
-  background: #111111 !important;
-  color: #F5F0E6 !important;
-  font-family: monospace;
+small {
+  color: var(--muted) !important;
 }
 
-pre {
-  padding: 15px;
-  overflow-x: auto;
-  border: 1px solid #333333;
-}
-
-/* Immagini */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Sfondo delle aree principali */
-header,
-main,
-footer,
-.page-content,
-.post-content {
-  background: #000000 !important;
-}
-
-/* Selezione del testo */
-::selection {
-  background: #FF704D;
-  color: #000000;
-}
-
-/* Mobile */
-@media screen and (max-width: 600px) {
-  html,
-  body {
-    font-size: 17px;
-  }
-
-  .site-title {
-    font-size: 32px;
-  }
-
-  .wrapper {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-}
-```
+/* =========================================
+   08
