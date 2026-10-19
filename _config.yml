@@ -4,16 +4,11 @@ description: "Appunti, idee e osservazioni."
 url: "https://applephil75.github.io"
 baseurl: ""
 
+theme: minima
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-timezone: Europe/Rome
-future: false
-show_excerpts: true
+minima:
+  skin: classic
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
+show_excerpts: true
