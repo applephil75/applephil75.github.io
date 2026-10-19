@@ -6,19 +6,25 @@ Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda i
 
 ## Now
 
+**In estrema sintesi, chi sono e cosa faccio...**
+
 * Classe 1975. Padovano di nascita. Ho vissuto per anni tra i Colli Euganei e Padova. Dal 2016 sono cittadino di Vicenza, dove sono venuto ad abitare con moglie e due gatti.
 * Economista aziendalista, specializzato in organizzazioni.
 * Consulente, formatore e mediatore per operazioni in asset digitali (Bitcoin, Altcoin, Stablecoin).
 * Esperto in dinamiche creative, visual thinking, business aware design, con numerose esperienze fin dai primi anni Duemila.
 * Blogger e giornalista specializzato in tematiche macroeconomiche e tecnologiche, con specifico riferimento alla finanza digitale e decentralizzata.
 
-## Side project e passioni laterali
+## Side project page e passioni laterali
+
+**Ovvero le mie competenze globali, molte delle quali confluite nella mia professione.**
 
 * Musicista professionista, pianista e compositore di estrazione conservatoriale.
 * Organizzatore ed esperto di associazionismo culturale e istituzioni. Sono stato presidente, vicepresidente, tesoriere e co-fondatore all'interno di numerosi progetti, nonché membro di consiglio all'interno dell'area cooperazione internazionale, in stretta collaborazione col Comune di Padova.
 * Appassionato di scrittura per il Web, mi definisco *blogger da quando esistono i blog*.
 
 ## Collegamenti e collaborazioni
+
+**Perché la connessione è tutto...**
 
 I miei recapiti *classici* sono legati al mio lavoro come consulente globale in operazioni con *asset digitali e decentralizzati*, quali Bitcoin, Altcoin e Stablecoin. Nello specifico collaboro con le seguenti realtà in Italia (più svariati altri soggetti in area ticinese):
 
@@ -32,6 +38,8 @@ I miei recapiti *classici* sono legati al mio lavoro come consulente globale in 
 * albertin@tuta.io (per consulenze private)
 
 ## Servizi
+
+**Tutti i servizi sono erogati attraverso la collaborazione personale e istituzionale con professionisti, aziende ed enti qualificati, coi quali ho intrapreso numerosi percorsi di partnership.**
 
 * Operazioni e investimenti in e con asset digitali (Bitcoin in primis) tra Italia e Svizzera Italiana.
 * Formazione e training in fin-tech e blockchain applicata.
