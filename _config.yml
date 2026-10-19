@@ -1,14 +1,12 @@
-
-title: "Diario"
-description: "Appunti, idee e osservazioni."
-url: "https://applephil75.github.io"
-baseurl: ""
+title: Il Mio Blog
+author: Filippo
+description: Appunti, riflessioni e note personali.
 
 theme: minima
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
 
-minima:
-  skin: classic
+header_pages:
+  - index.md
 
-show_excerpts: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
