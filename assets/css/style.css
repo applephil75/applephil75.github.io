@@ -1,8 +1,8 @@
 
 :root {
   --background: #081a14;
-  --coral: #ff4b3e;
-  --coral-bright: #ff4b3e;
+  --coral: #ff3d9a;
+  --coral-bright: #ff3d9a;
   --text: #eadfcc;
   --muted: #a69a8d;
   --border: #493027;
@@ -28,7 +28,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: serif;
   position: fixed;
   inset: 0;
   pointer-events: none;
