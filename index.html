@@ -1,0 +1,45 @@
+
+---
+layout: default
+title: Diario
+---
+
+<section class="journal-intro">
+  <p class="eyebrow">NOTE PERSONALI / APPUNTI / OSSERVAZIONI</p>
+  <h1>Il diario online</h1>
+  <p>Frammenti di pensiero, cose viste, idee da conservare.</p>
+</section>
+
+<section class="post-list" aria-label="Tutti i post">
+
+  {% for post in site.posts %}
+    <article class="post-preview">
+
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%d.%m.%Y" }}
+        </time>
+        <span class="meta-separator">/</span>
+        NOTA {{ forloop.rindex | prepend: "000" | slice: -3, 3 }}
+      </p>
+
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+
+      <div class="post-excerpt">
+        {{ post.excerpt | default: post.content | strip_html | normalize_whitespace | truncate: 240 }}
+      </div>
+
+      <a class="read-more" href="{{ post.url | relative_url }}">
+        Continua a leggere →
+      </a>
+
+    </article>
+  {% else %}
+    <p class="empty-journal">
+      Nessuna nota registrata. Il diario è in attesa della prima trasmissione.
+    </p>
+  {% endfor %}
+
+</section>
