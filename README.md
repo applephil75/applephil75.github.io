@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
-Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue auree diramazioni nella grande rete.
+Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue varie diramazioni nella grande rete (sono presente in numerosi social network).
 
 ## Now
 
@@ -18,7 +18,7 @@ Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda i
 
 ## Collegamenti e collaborazioni
 
-I miei recapiti *classici* sono legati al mio lavoro come consulente globale in operazioni con **asset digitali e decentralizzati**, quali Bitcoin, Altcoin e Stablecoin. Nello specifico collaboro con le seguenti realtà in Italia (più svariati altri soggetti in area ticinese):
+I miei recapiti *classici* sono legati al mio lavoro come consulente globale in operazioni con *asset digitali e decentralizzati*, quali Bitcoin, Altcoin e Stablecoin. Nello specifico collaboro con le seguenti realtà in Italia (più svariati altri soggetti in area ticinese):
 
 * [Bitcoin Veneto Team](http://www.bitcoinveneto.it)
 * [Exchange CryptoSmart](http://www.cryptosmart.it)
@@ -40,6 +40,4 @@ I miei recapiti *classici* sono legati al mio lavoro come consulente globale in 
 
 * Xiaomi 14C Android
 * iPhone 12 iOS 18
-* HP Chromebook
-* Compaq laptop CatchyOS (Arch Linux)
 * MacBook Air Retina
