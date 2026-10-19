@@ -1,12 +1,6 @@
-title: Il Mio Blog
-author: Filippo
-description: Appunti, riflessioni e note personali.
+---
+layout: home
+title: Home
+---
 
-theme: minima
-
-header_pages:
-  - index.md
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+Benvenuto nel blog. Qui sotto trovi gli ultimi articoli pubblicati:
