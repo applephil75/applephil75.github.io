@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
+> Hackers can do almost anything and be a hacker. You can be a hacker carpenter. It’s not necessarily high tech. I think it has to do with craftsmanship and caring about what you’re doing. (Steven Levy)
+
 Pagina ufficiale statica e sintetico curriculum. Per la parte dinamica si veda il progetto su AT Proto [Volcano News](https://volcanonews.xyz) e le sue varie diramazioni nella grande rete (sono presente in numerosi social network).
 
 ## Now
