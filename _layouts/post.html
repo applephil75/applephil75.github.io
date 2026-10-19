@@ -1,0 +1,26 @@
+
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d.%m.%Y" }}
+      </time>
+      <span class="meta-separator">/</span>
+      DIARIO
+    </p>
+
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <nav class="post-navigation">
+    <a href="{{ '/' | relative_url }}">← Torna al diario</a>
+  </nav>
+</article>
