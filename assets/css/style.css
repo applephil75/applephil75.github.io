@@ -22,13 +22,13 @@ body {
   padding: 40px 24px;
   background: var(--background);
   color: var(--text);
-  font-family: "Verdana", sans-serif;
+  font-family: serif;
   font-size: 19px;
   line-height: 1.8;
 }
 
 body::before {
-  content: serif;
+  content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
