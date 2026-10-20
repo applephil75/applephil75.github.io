@@ -1,12 +1,11 @@
+
 title: Filippo Albertin Official
-author: Filippo
-description: Informazioni e annotazioni personali...
-
-theme: midnight
-
-header_pages:
-  - index.md
+description: Pensieri, appunti e osservazioni
+theme: null
+remote_theme: pages-themes/midnight@v0.2.0
 
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
