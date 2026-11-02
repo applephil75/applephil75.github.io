@@ -19,7 +19,8 @@
   --font-main: "Helvetica Neue", Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, monospace;
 
-  --content-width: 740px;
+  --content-width: 720px;
+  --page-margin: 2cm;
 }
 
 /* GENERAL */
@@ -40,8 +41,8 @@ body {
   color: var(--text);
 
   font-family: var(--font-main);
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 15px;
+  line-height: 1.7;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -64,12 +65,16 @@ body::before {
   );
 }
 
-/* MAIN CONTAINER */
+/* PAGE WIDTH AND MARGINS */
 
 .container,
 .site-shell,
 main {
-  width: min(var(--content-width), calc(100% - 40px));
+  width: min(
+    var(--content-width),
+    calc(100% - 2 * var(--page-margin))
+  );
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -81,29 +86,38 @@ h2,
 h3,
 h4 {
   color: var(--heading);
-  font-weight: 650;
-  line-height: 1.25;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
 }
 
 h1 {
-  font-size: clamp(2.4rem, 7vw, 4.5rem);
-  letter-spacing: -0.065em;
+  font-size: 2.15rem;
+  letter-spacing: -0.045em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 h2 {
-  margin-top: 2.5em;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+}
+
+h4 {
+  font-size: 0.95rem;
 }
 
 /* PARAGRAPHS */
 
 p {
-  margin: 0 0 1.3em;
+  margin: 0 0 1.2em;
 }
 
 /* LINKS */
@@ -128,7 +142,7 @@ nav,
 .navigation,
 .site-nav {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -136,7 +150,7 @@ nav,
 nav a,
 .navigation a,
 .site-nav a {
-  margin-right: 18px;
+  margin-right: 16px;
   color: var(--muted);
   text-decoration: none;
 }
@@ -164,15 +178,23 @@ code {
   padding: 2px 5px;
 }
 
+pre {
+  overflow-x: auto;
+  padding: 15px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
 /* LISTS */
 
 ul,
 ol {
-  padding-left: 1.5em;
+  padding-left: 1.4em;
 }
 
 li {
-  margin-bottom: 0.45em;
+  margin-bottom: 0.4em;
 }
 
 li::marker {
@@ -184,14 +206,14 @@ li::marker {
 hr {
   border: 0;
   border-top: 1px solid var(--border);
-  margin: 2.5em 0;
+  margin: 2.2em 0;
 }
 
 /* BLOCKQUOTES */
 
 blockquote {
   margin: 2em 0;
-  padding: 0 0 0 18px;
+  padding: 0 0 0 16px;
 
   border-left: 2px solid var(--accent);
 
@@ -226,7 +248,7 @@ button {
   color: var(--background);
   background: var(--heading);
   border: none;
-  padding: 10px 18px;
+  padding: 9px 16px;
   cursor: pointer;
 }
 
@@ -237,14 +259,14 @@ button:hover {
 /* FOOTER */
 
 footer {
-  margin-top: 4em;
-  padding: 1.5em 0;
+  margin-top: 3.5em;
+  padding: 1.4em 0;
 
   border-top: 1px solid var(--border);
 
   color: var(--muted);
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
 }
 
 /* MOBILE */
@@ -252,17 +274,29 @@ footer {
 @media (max-width: 600px) {
 
   body {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  :root {
+    --page-margin: 2cm;
   }
 
   h1 {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 
   .container,
   .site-shell,
   main {
-    width: calc(100% - 32px);
+    width: calc(100% - 40px);
   }
 
   nav a,
